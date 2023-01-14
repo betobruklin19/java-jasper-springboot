@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-jasper/java-jasper.iml" filepath="$PROJECT_DIR$/java-jasper/java-jasper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-jasper-springboot.iml" filepath="$PROJECT_DIR$/.idea/java-jasper-springboot.iml" />
+    </modules>
+  </component>
+</project>
