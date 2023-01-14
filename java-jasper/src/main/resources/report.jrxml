@@ -41,373 +41,211 @@
 			<rightPen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-	<queryString>
-		<![CDATA[select * from aluno al inner join aluno_endereco ae on al.id_aluno = ae.aluno_id
-inner join aluno_saude als on als.aluno_id = ae.aluno_id
-inner join bairro on bairro.id_bairro = ae.bairro_id
-inner join nome_logradouro nl on nl.bairro_id = bairro.id_bairro
-inner join municipio mun on mun.id_mun = ae.municipio_id
-inner join classe_aluno ca on ca.aluno_id = al.id_aluno
-inner join classe cl on cl.id_classe = ca.classe_id
-inner join escola esc on esc.id_esc = cl.escola_id
-inner join nivel n on n.id_nivel = cl.nivel_id
-inner join raca_cor rc on rc.id_raca_cor = al.raca_cor_id
-inner join sexo sx on sx.id_sexo = al.sexo_id
-inner join responsavel_aluno resal on resal.aluno_id = al.id_aluno
-inner join responsavel r on r.id_responsavel = resal.responsavel_id
-inner join parentesco pa on pa.id_parentesco = resal.parantesco_id
-inner join tipo_sanguineo ts on ts.id_tipo_sanguineo = als.tipo_sanguineo_id
-order by cl.turma]]>
-	</queryString>
 	<field name="id_aluno" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_aluno"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_aluno"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
 	</field>
 	<field name="nome_aluno" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nome_aluno"/>
-		<property name="com.jaspersoft.studio.field.label" value="nome_aluno"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
 	</field>
 	<field name="data_nascimento" class="java.sql.Date">
-		<property name="com.jaspersoft.studio.field.name" value="data_nascimento"/>
-		<property name="com.jaspersoft.studio.field.label" value="data_nascimento"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
 	</field>
 	<field name="cpf_aluno" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="cpf_aluno"/>
-		<property name="com.jaspersoft.studio.field.label" value="cpf_aluno"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="rg_aluno" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="rg_aluno"/>
-		<property name="com.jaspersoft.studio.field.label" value="rg_aluno"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="rg_data_emissao" class="java.sql.Date">
-		<property name="com.jaspersoft.studio.field.name" value="rg_data_emissao"/>
-		<property name="com.jaspersoft.studio.field.label" value="rg_data_emissao"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="rg_orgao_expedidor" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="rg_orgao_expedidor"/>
-		<property name="com.jaspersoft.studio.field.label" value="rg_orgao_expedidor"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="nome_mae" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nome_mae"/>
-		<property name="com.jaspersoft.studio.field.label" value="nome_mae"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="nome_pai" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nome_pai"/>
-		<property name="com.jaspersoft.studio.field.label" value="nome_pai"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="telefone_aluno" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="telefone_aluno"/>
-		<property name="com.jaspersoft.studio.field.label" value="telefone_aluno"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="sexo_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="sexo_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="sexo_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="raca_cor_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="raca_cor_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="raca_cor_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="email" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="email"/>
-		<property name="com.jaspersoft.studio.field.label" value="email"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="nis" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nis"/>
-		<property name="com.jaspersoft.studio.field.label" value="nis"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
+
 	</field>
 	<field name="aluno_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="aluno_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="aluno_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>
+
 	</field>
 	<field name="bairro_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="bairro_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="bairro_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>
+
 	</field>
 	<field name="nome_logradouro_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="nome_logradouro_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="nome_logradouro_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>
+
 	</field>
 	<field name="municipio_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="municipio_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="municipio_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>
+
 	</field>
 	<field name="numero" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="numero"/>
-		<property name="com.jaspersoft.studio.field.label" value="numero"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>
 	</field>
 	<field name="cep" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="cep"/>
-		<property name="com.jaspersoft.studio.field.label" value="cep"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>
+
 	</field>
 	<field name="complemento" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="complemento"/>
-		<property name="com.jaspersoft.studio.field.label" value="complemento"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>
+
 	</field>
 	<field name="ponto_referencia" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="ponto_referencia"/>
-		<property name="com.jaspersoft.studio.field.label" value="ponto_referencia"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>
+
 	</field>
 	<field name="id_aluno_end" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_aluno_end"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_aluno_end"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>
+
 	</field>
 	<field name="id_aluno_saude" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_aluno_saude"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_aluno_saude"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_saude"/>
+
 	</field>
 	<field name="tipo_sanguineo_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="tipo_sanguineo_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="tipo_sanguineo_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_saude"/>
+
 	</field>
 	<field name="intolerancia_alimentar_desc" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="intolerancia_alimentar_desc"/>
-		<property name="com.jaspersoft.studio.field.label" value="intolerancia_alimentar_desc"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_saude"/>
+
 	</field>
 	<field name="alergia_medicamento_desc" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="alergia_medicamento_desc"/>
-		<property name="com.jaspersoft.studio.field.label" value="alergia_medicamento_desc"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_saude"/>
+
 	</field>
 	<field name="doenca_desc" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="doenca_desc"/>
-		<property name="com.jaspersoft.studio.field.label" value="doenca_desc"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_saude"/>
+
 	</field>
 	<field name="medicacao_continua_desc" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="medicacao_continua_desc"/>
-		<property name="com.jaspersoft.studio.field.label" value="medicacao_continua_desc"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_saude"/>
+
 	</field>
 	<field name="acompanhamento_medico_desc" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="acompanhamento_medico_desc"/>
-		<property name="com.jaspersoft.studio.field.label" value="acompanhamento_medico_desc"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_saude"/>
+
 	</field>
 	<field name="deficiencia_desc" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="deficiencia_desc"/>
-		<property name="com.jaspersoft.studio.field.label" value="deficiencia_desc"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_saude"/>
+
 	</field>
 	<field name="relatorio" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="relatorio"/>
-		<property name="com.jaspersoft.studio.field.label" value="relatorio"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_saude"/>
+
 	</field>
 	<field name="id_bairro" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_bairro"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_bairro"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="bairro"/>
+
 	</field>
 	<field name="nome_bairro" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nome_bairro"/>
-		<property name="com.jaspersoft.studio.field.label" value="nome_bairro"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="bairro"/>
+
 	</field>
 	<field name="id_logradouro" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_logradouro"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_logradouro"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="nome_logradouro"/>
+
 	</field>
 	<field name="descricao_logradouro" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="descricao_logradouro"/>
-		<property name="com.jaspersoft.studio.field.label" value="descricao_logradouro"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="nome_logradouro"/>
+
 	</field>
 	<field name="id_mun" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_mun"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_mun"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="municipio"/>
+
 	</field>
 	<field name="nome_mun" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nome_mun"/>
-		<property name="com.jaspersoft.studio.field.label" value="nome_mun"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="municipio"/>
+
 	</field>
 	<field name="uf_codigo" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="uf_codigo"/>
-		<property name="com.jaspersoft.studio.field.label" value="uf_codigo"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="municipio"/>
+
 	</field>
 	<field name="id_classe_al" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_classe_al"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_classe_al"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="classe_aluno"/>
+
 	</field>
 	<field name="classe_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="classe_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="classe_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="classe_aluno"/>
+
 	</field>
 	<field name="data_matricula" class="java.sql.Date">
-		<property name="com.jaspersoft.studio.field.name" value="data_matricula"/>
-		<property name="com.jaspersoft.studio.field.label" value="data_matricula"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="classe_aluno"/>
+
 	</field>
 	<field name="ano_letivo" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="ano_letivo"/>
-		<property name="com.jaspersoft.studio.field.label" value="ano_letivo"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="classe_aluno"/>
+
 	</field>
 	<field name="id_classe" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_classe"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_classe"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="classe"/>
+
 	</field>
 	<field name="nivel_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="nivel_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="nivel_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="classe"/>
+
 	</field>
 	<field name="escola_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="escola_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="escola_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="classe"/>
+
 	</field>
 	<field name="serie" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="serie"/>
-		<property name="com.jaspersoft.studio.field.label" value="serie"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="classe"/>
+
 	</field>
 	<field name="turma" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="turma"/>
-		<property name="com.jaspersoft.studio.field.label" value="turma"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="classe"/>
+
 	</field>
 	<field name="id_esc" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_esc"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_esc"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="escola"/>
+
 	</field>
 	<field name="nome_esc" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nome_esc"/>
-		<property name="com.jaspersoft.studio.field.label" value="nome_esc"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="escola"/>
+
 	</field>
 	<field name="codigo_inep" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="codigo_inep"/>
-		<property name="com.jaspersoft.studio.field.label" value="codigo_inep"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="escola"/>
+
 	</field>
 	<field name="id_nivel" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_nivel"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_nivel"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="nivel"/>
+
 	</field>
 	<field name="descricao_nivel" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="descricao_nivel"/>
-		<property name="com.jaspersoft.studio.field.label" value="descricao_nivel"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="nivel"/>
+
 	</field>
 	<field name="id_raca_cor" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_raca_cor"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_raca_cor"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="raca_cor"/>
+
 	</field>
 	<field name="descricao_raca_cor" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="descricao_raca_cor"/>
-		<property name="com.jaspersoft.studio.field.label" value="descricao_raca_cor"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="raca_cor"/>
+
 	</field>
 	<field name="id_sexo" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_sexo"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_sexo"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="sexo"/>
+
 	</field>
 	<field name="descricao_sexo" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="descricao_sexo"/>
-		<property name="com.jaspersoft.studio.field.label" value="descricao_sexo"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="sexo"/>
+
 	</field>
 	<field name="id_resp_aluno" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_resp_aluno"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_resp_aluno"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="responsavel_aluno"/>
+
 	</field>
 	<field name="responsavel_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="responsavel_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="responsavel_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="responsavel_aluno"/>
+
 	</field>
 	<field name="parantesco_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="parantesco_id"/>
-		<property name="com.jaspersoft.studio.field.label" value="parantesco_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="responsavel_aluno"/>
+
 	</field>
 	<field name="id_responsavel" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_responsavel"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_responsavel"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="responsavel"/>
+
 	</field>
 	<field name="nome_resp" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nome_resp"/>
-		<property name="com.jaspersoft.studio.field.label" value="nome_resp"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="responsavel"/>
+
 	</field>
 	<field name="cpf_resp" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="cpf_resp"/>
-		<property name="com.jaspersoft.studio.field.label" value="cpf_resp"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="responsavel"/>
+
 	</field>
 	<field name="rg_resp" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="rg_resp"/>
-		<property name="com.jaspersoft.studio.field.label" value="rg_resp"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="responsavel"/>
+
 	</field>
 	<field name="nic" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="nic"/>
-		<property name="com.jaspersoft.studio.field.label" value="nic"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="responsavel"/>
+
 	</field>
 	<field name="telefone_resp" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="telefone_resp"/>
-		<property name="com.jaspersoft.studio.field.label" value="telefone_resp"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="responsavel"/>
+
 	</field>
 	<field name="id_parentesco" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_parentesco"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_parentesco"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="parentesco"/>
+
 	</field>
 	<field name="descricao_parentesco" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="descricao_parentesco"/>
-		<property name="com.jaspersoft.studio.field.label" value="descricao_parentesco"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="parentesco"/>
+
 	</field>
 	<field name="id_tipo_sanguineo" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_tipo_sanguineo"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_tipo_sanguineo"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="tipo_sanguineo"/>
+
 	</field>
 	<field name="descricao_tipo_sang" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="descricao_tipo_sang"/>
-		<property name="com.jaspersoft.studio.field.label" value="descricao_tipo_sang"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="tipo_sanguineo"/>
+
 	</field>
 	<background>
 		<band splitType="Stretch"/>
