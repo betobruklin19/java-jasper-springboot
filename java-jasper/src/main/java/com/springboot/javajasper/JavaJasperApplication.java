@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.springboot.javajasper.services.ReportService;
 
 import net.sf.jasperreports.engine.JRException;
-import net.sf.jasperreports.engine.JasperExportManager;
 
 @SpringBootApplication
 @RestController
@@ -42,7 +41,6 @@ public class JavaJasperApplication {
 			var resource = new ByteArrayResource(Files.readAllBytes(path));
 			
 			return ResponseEntity.ok().contentType(MediaType.TEXT_HTML).body(resource);
-			
 		}
 		
 		@GetMapping("/reports")

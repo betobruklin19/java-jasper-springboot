@@ -14,7 +14,8 @@ public class ReportRepository {
 	public ReportRepository(EntityManager entityManager) {
 		this.entityManager = entityManager;
 	}
-	
+
+	@SuppressWarnings("unchecked")
 	public List<Object> getReport(){
 		String query = "select * from aluno al inner join aluno_endereco ae on al.id_aluno = ae.aluno_id\r\n"
 				+ "inner join aluno_saude als on als.aluno_id = ae.aluno_id\r\n"
@@ -35,5 +36,6 @@ public class ReportRepository {
 		
 		var resultado = entityManager.createNativeQuery(query);
 		return resultado.getResultList();
+
 	}
 }

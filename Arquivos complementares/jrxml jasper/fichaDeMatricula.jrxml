@@ -129,7 +129,7 @@ order by cl.turma]]>
 		<property name="com.jaspersoft.studio.field.label" value="nis"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
 	</field>
-	<field name="al.aluno_id" class="java.lang.Integer">
+	<field name="aluno_id" class="java.lang.Integer">
 		<property name="com.jaspersoft.studio.field.name" value="aluno_id"/>
 		<property name="com.jaspersoft.studio.field.label" value="aluno_id"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="aluno_endereco"/>

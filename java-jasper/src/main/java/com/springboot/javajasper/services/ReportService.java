@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.core.io.ByteArrayResource;
@@ -32,25 +33,23 @@ public class ReportService {
 	}
 
 	public ByteArrayResource getReport() throws JRException, IOException {
-		var resultado = reportRepository.getReport();
+		List<Object> resultado = reportRepository.getReport();
 
 		try {
 			File file = ResourceUtils.getFile("classpath:report.jrxml");
 			JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
 			JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(resultado);
 			Map<String, Object> parameters = new HashMap<>();
-			parameters.put("id_aluno", "2");
+			parameters.put("Criado por", "Roberto");
 
-			
-			  JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,
-			  parameters, dataSource);
-			 
-				/*
-				 * JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,
-				 * parameters);
-				 */
-			 
-			String fileDestiny = "C:/Users/Roberto/eclipse-workspace2/java-jasper-springboot/java-jasper/src/main/resources/jasper.pdf";
+			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+
+			// Descomente a linha abaixo para ver o documento pdf sendo impresso em branco,
+			// feito para teste.
+			// OBS: Comente a linha 45 também, quando fizer isso.
+//			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters);
+
+			String fileDestiny = "C:/Users/Roberto/eclipse-workspace2/java-jasper-springboot/java-jasper/src/main/resources/relatorio.pdf";
 			JasperExportManager.exportReportToPdfFile(jasperPrint, fileDestiny);
 
 			var pdfFile = new File(fileDestiny);

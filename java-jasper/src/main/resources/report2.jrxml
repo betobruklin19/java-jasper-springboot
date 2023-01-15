@@ -59,11 +59,6 @@ inner join parentesco pa on pa.id_parentesco = resal.parantesco_id
 inner join tipo_sanguineo ts on ts.id_tipo_sanguineo = als.tipo_sanguineo_id
 order by cl.turma]]>
 	</queryString>
-	<field name="id_aluno" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="id_aluno"/>
-		<property name="com.jaspersoft.studio.field.label" value="id_aluno"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="aluno"/>
-	</field>
 	<field name="nome_aluno" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="nome_aluno"/>
 		<property name="com.jaspersoft.studio.field.label" value="nome_aluno"/>
@@ -435,11 +430,15 @@ order by cl.turma]]>
 			</staticText>
 			<frame>
 				<reportElement x="20" y="170" width="510" height="390" uuid="53464485-a153-49de-a738-51a75058dd14"/>
-				<image>
+				<image hAlign="Center" vAlign="Middle">
 					<reportElement x="0" y="0" width="510" height="390" uuid="4174254b-b572-4022-bc42-49d55f778bcf"/>
 					<imageExpression><![CDATA["C:/Users/Roberto/Desktop/Hands On Horizon/study-image.png"]]></imageExpression>
 				</image>
 			</frame>
+			<textField>
+				<reportElement x="416" y="614" width="100" height="30" uuid="f7c32504-0366-42d3-abb6-c66e5caee2e7"/>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 	<pageHeader>
